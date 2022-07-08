@@ -28,6 +28,6 @@ node index.js
 
 * `<prefix>seen @name` or `<prefix>lastseen @name` to see when a user was last online
 
-
-
-
+## Images
+![alt text](https://github.com/ElerWohlmuthFH/lastSeenDiscordBot/blob/master/online.png?raw=true)
+![alt text](https://github.com/ElerWohlmuthFH/lastSeenDiscordBot/blob/master/offline.png?raw=true)
