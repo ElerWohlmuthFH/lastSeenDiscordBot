@@ -24,6 +24,7 @@ npm i
 ```
 node index.js
 ```
+If the bot does not start, `npm rebuild` might fix the problem.
 ## Commands
 
 * `<prefix>seen @name` or `<prefix>lastseen @name` to see when a user was last online
