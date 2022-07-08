@@ -8,7 +8,7 @@ exports.exec = async (message, args) => {
 			await message.client.unloadCommand(cmd.location, cmd.help.name);
 			message.client.loadCommand(cmd.location, cmd.help.name);
 		});
-		message.channel.send(new RichEmbed().setTitle('Reloaded all commands!').setColor(message.client.config.color).setTimestamp());
+		message.channel.send(new RichEmbed().setTitle('Reloaded all commands!').setColor(message.client.config.colorOffline).setTimestamp());
 		return;
 	}
 	const name = args[0].toLowerCase();
@@ -16,7 +16,7 @@ exports.exec = async (message, args) => {
 	if (!command) return message.channel.send('No such command of that name or alias!');
 	await message.client.unloadCommand(command.location, command.help.name);
 	message.client.loadCommand(command.location, command.help.name);
-	message.channel.send(new RichEmbed().setTitle(`Reloaded command ${command.help.name}!`).setTimestamp().setColor(message.client.config.color));
+	message.channel.send(new RichEmbed().setTitle(`Reloaded command ${command.help.name}!`).setTimestamp().setColor(message.client.config.colorOffline));
 };
 
 exports.inhibitor = (message) => {

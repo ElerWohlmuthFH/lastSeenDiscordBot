@@ -1,0 +1,11 @@
+{ 
+    "token": "DISCORD_BOT_TOKEN",
+    "prefix": "/",
+    "owners": ["170212740827316224"],
+    "colorOffline": 15158332,
+    "colorOnline": 3066993,
+    "clientOptions": {
+        "disableEveryone": true
+    },
+    "inactivityWarning": "1d"
+}

@@ -8,7 +8,7 @@ exports.exec = async (message, args) => {
 	if (!users || !users.size) return message.channel.send('No users provided!');
 	const embeds = [];
 	users.forEach(user => {
-		embeds.push(lastseen(message.client, user));
+		embeds.push(lastseen(message.client, user, user.avatarURL));
 	});
 	if (embeds.length === 1) return message.channel.send(await embeds[0]);
 	paginate(embeds, message);
@@ -22,7 +22,7 @@ exports.inhibitor = (message) => {
 exports.help = {
 	name: 'lastseen',
 	aliases: ['seen'],
-	examples: ['seen @JoeGamez', 'seen 524817579202838551'],
+	examples: ['seen @Teddynator', 'seen 524817579202838551'],
 	usage: 'seen <users>',
 	description: 'Checks when a user was last online.',
 	cooldown: 3,
